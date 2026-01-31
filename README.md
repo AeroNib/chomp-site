@@ -2,10 +2,21 @@
 
 This site is a visual catalog of various personal creative projects I've worked on.
 
-## Editing and Building the Site
+It's a static site built with HTML and CSS and minimal JavaScript to accomplish some things like serving dynamic navigation links. The site structure is simple and designed around reuse.
 
-This is a static site built with HTML and CSS and minimal JavaScript to accomplish some things like serving dynamic navigation links. The site structure is simple and designed around reuse.
+# Adding New Projects
 
-To add new projects, create a new folder — the recommended naming is `YYYYnn` where `nn` is a sequencial number, e.g., `202601`, `202602`, etc. This is to help keep projects roughly in chronological order. Copy an `index.html` from another project and edit the project name, year, text, and Thangs link. The text and Thangs link are optional and be commented out if not applicable.
+1. **Copy the template folder** and rename it with a year-prefixed serial number (e.g., `202302`, `202303`)
+2. **Add images to the new folder**:
+   - `thumb.jpg` - Thumbnail for gallery (200px tall)
+   - `hero.jpg` - Main project image (page will limit it to 1050px wide x 900px tall)
+3. **Edit index.html in the new folder**:
+   - Update project title
+   - Update year
+   - Update external link URL, icon, and aria-label (or comment out if not needed)
+   - Update description paragraph (or comment out if not needed)
+4. **Update main gallery index.html** with a link to `newfolder`
 
-A local clone of the repository can be tested by running the `./serve.sh` script to start a Python web server.
+# Development Testing
+
+To test with a local clone of the repository, run `./serve.sh` to start a Python web server.
