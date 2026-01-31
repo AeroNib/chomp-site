@@ -11,7 +11,7 @@
   // Generate the header HTML directly
   const headerHTML = `
         <header>
-            <a href="${basePath}index.html" class="logo-link">
+            <a href="${basePath}" class="logo-link">
                 <img src="${basePath}logo.svg" alt="Chomp Workshop" class="logo" />
             </a>
             <nav class="nav-circles">
