@@ -11,13 +11,13 @@
   // Generate the header HTML directly
   const headerHTML = `
         <header>
-            <a href="${basePath}" class="logo-link">
+            <a href="/" class="logo-link">
                 <img src="${basePath}logo.svg" alt="Chomp Workshop" class="logo" />
             </a>
             <nav class="nav-circles">
-            <a href="https://chomp.aeronib.com/" class="nav-circle" aria-label="Home">
-                <img src="${basePath}back-icon.svg" alt="" class="nav-icon" />
-            </a>
+                <a href="/" class="nav-circle" aria-label="Home">
+                    <img src="${basePath}back-icon.svg" alt="" class="nav-icon" />
+                </a>
                 <a href="https://www.aeronib.com/" class="nav-circle" aria-label="Main Site">
                     <img src="${basePath}home-icon.svg" alt="" class="nav-icon" />
                 </a>
