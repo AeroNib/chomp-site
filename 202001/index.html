@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chomp Workshop Projects</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body>
+        <script src="../header.js"></script>
+
+        <main class="project-page">
+            <img src="hero.jpg" alt="" class="hero-image" />
+            <div class="project-header">
+                <div class="project-title-container">
+                    <!-- EDIT: Project title -->
+                    <h2 class="project-title">Nixie Clock</h2>
+                </div>
+
+                <!-- EDIT: Project year -->
+                <h2 class="project-year">2020</h2>
+            </div>
+
+            <!-- OPTIONAL: Project description paragraph -->
+            <!-- Comment out or delete this <p> block if not needed -->
+            <p class="project-description">
+                This was an experiment to design and build a custom Nixie clock
+                with as much of my own PCB as possible. It was a learning
+                experience in high voltage circuitry design and in soldering
+                some of the highest density IC packages up to that point. The
+                clock was designed around Soviet IN-12A and IN-2 tubes that I
+                installed into thru-hole sockets. My code ran on an Arduino
+                development board, and it controlled the high voltage tube
+                inputs using a series of HV5530 shift registers with clamped
+                outputs. While the clock worked perfectly, the Taylor 1363
+                high-voltage power supply flyback boost converter emitted a
+                headache-inducing audible whine. If I revisit ths project, I
+                would try a different power supply or design my own. While I was
+                planning to use a bare ATmega chip on the final board instead of
+                the Arduino dev board, I would instead switch to an ESP32 module
+                that is much more flexible and includes integrated WiFi for
+                network time sync.
+            </p>
+            <!-- END OPTIONAL -->
+        </main>
+    </body>
+</html>
