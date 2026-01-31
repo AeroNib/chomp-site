@@ -134,7 +134,7 @@ main.project-page {
 
 .project-title-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
 }
 
@@ -143,6 +143,7 @@ main.project-page {
     font-size: 2em;
     font-weight: normal;
     margin: 0;
+    line-height: 1.2;
 }
 
 .project-year {
@@ -158,6 +159,8 @@ main.project-page {
 .project-circle {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
+    margin: 0 10px;
 }
 
 .project-icon {
