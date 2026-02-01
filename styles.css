@@ -114,11 +114,15 @@ main.project-page {
     max-width: 1050px;
 }
 
-.hero-image {
+.project-image {
     max-width: 100%;
     max-height: 900px;
     height: auto;
     display: block;
+    margin: 10px auto;
+}
+
+.hero-image {
     margin: 0 auto;
     box-shadow:
         8px 8px 0px var(--color-accent-3),
